@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Page</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Anta&family=Gluten:wght@100..900&family=Lilita+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Phudu:wght@300..900&family=Playwrite+VN:wght@100..400&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+  <section class="sheet-section">
+    <h2 class="section-title">A Chut Dashboard</h2>
+    <p style="font-size: 12px;">ID phải theo thứ tự 1,2,3,..</p>
+    <p style="font-size: 12px;">Phần course_list: fill thông tin theo thứ tự card-content-1, 2, 3, 4,.. Không được skip content ở giữa</p>
+    <p style="font-size: 12px;">Ví dụ, có 4 content box cho course Social Sprint: fill card-title-1,2,3,4 và card-content-1,2,3,4</p>
+    <div class="sheet-embed-wrapper">
+      <iframe 
+        src="https://docs.google.com/spreadsheets/d/1a3zeuzEgJlEHhQMjnz8B_qDQiVA8MJiw2LWUAycY2O0/edit?usp=sharing 
+        frameborder='0'"
+        width="100%"
+        height="600"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <div class="script-buttons">
+        <button onclick="runSyncCourses()">🔄 Sync Courses</button>
+        <button onclick="runSyncFAQ()">🔄 Sync FAQs</button>
+      </div>
+  </section>
+  
+
+
+<script src="js/dashboard.js"></script>
+
+
+</body>
+</html>

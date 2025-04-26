@@ -13,7 +13,9 @@
 }
 
 
-
+html {
+  scroll-behavior: smooth;
+}
 
 @property --angle {
   syntax: '<angle>';
@@ -45,6 +47,7 @@
 
 /* Example usage */
 body {
+  
   font-family: 'SayuriValken', sans-serif;
   background-color: #ECF7D4;
 }
@@ -275,10 +278,12 @@ nav {
     justify-content: center;
     font-size: 3rem;
     box-shadow: 10px 10px 0px rgba(68, 82, 42, 1);
+    text-decoration: none;
   }
 
   .circle i {
     transition: transform 0.3s ease;
+    text-decoration: none;
   }
   
   .circle:hover i {
@@ -605,7 +610,7 @@ nav {
 
 
 .section-title {
-  font-size: 20rem;
+  font-size: 5rem;
   color: #000000;
   font-weight: 800;
   margin-bottom: 4rem;
@@ -1654,7 +1659,7 @@ nav {
 }
 
 .ft-logo-label {
-  margin-top: 0.5rem;
+  margin-top: 0.25rem;
 }
 
 .ft-logo-name {
@@ -1663,7 +1668,7 @@ nav {
 }
 
 .ft-logo-sub {
-  font-size: 0.75rem;
+  font-size: 0.5rem;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
 }
@@ -1679,13 +1684,13 @@ nav {
 }
 
 .ft-col h3 {
-  font-size: 2rem;
+  font-size: 1.4rem;
   font-weight: 700;
   margin-bottom: 1rem;
 }
 
 .ft-col p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-bottom: 0.75rem;
   line-height: 1.5;
 }
@@ -1709,8 +1714,8 @@ nav {
 }
 
 .circle-icon {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 1.8rem;
+  height: 1.8rem;
   border-radius: 50%;
   background-color: #FDFEEA;
   border: 3px solid black;
@@ -1731,7 +1736,9 @@ nav {
   height: 1.2rem;
 }
 
-
+.circle a {
+  text-decoration: none;
+}
 .simple-footer {
   background-image: url('/image/curvyfooterbg.png');
   background-color: #FDFEEA;
@@ -2832,12 +2839,7 @@ p {
   text-align: center;
 }
 
-.section-title {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  font-family: 'Poppins', sans-serif;
-  color: #4A4A4A;
-}
+
 
 .sheet-embed-wrapper {
   border: 5px solid #BDE75A;

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Simple Page</title>
+  <title>AChutSocial</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -14,16 +14,15 @@
 <body>
 
   <nav id="main-nav"  class="nav">
-    <img src="image/logo2.png" alt="aChuts Logo" style="max-height: 8rem;" class="nav-logo" />
+    <a href="index.html"><img src="image/logo2.png" alt="aChuts Logo" style="max-height: 8rem;" class="nav-logo" /></a>
 
     <div class="nav-links">
       <!-- <a href="#">Trang Chủ</a> -->
-      <a href="#">Khóa Học</a>
-      <a href="#">Làm Wen</a>
+      <a href="course_list.html">Khóa Học</a>
+      <a href="#form">Làm Wen</a>
     </div>
-    <button class="nav-btn">ĐĂNG KÍ</button>
+    <a  href="#form" style="text-decoration: none;" class="nav-btn">ĐĂNG KÍ</a>
   </nav>
-  
   <section class="header">
     <div class="zstack">
       <div class="greenbox">
@@ -31,10 +30,10 @@
         <div class="box box1">
           <h1><span class="brand-green">aChuts.</span><br /> <span class="brand-social" style="font-size: 5rem; color: white">social</span></h1>
           <div class="socials">
-            <div class="circle"><i class="fab fa-facebook-f"></i></div>
-            <div class="circle"><i class="fab fa-instagram"></i></div>
-            <div class="circle"><i class="fab fa-tiktok"></i></div>
-            <div class="circle"><i class="fa-brands fa-threads"></i></div>
+            <div class="circle"><i id="facebook" class="fab fa-facebook-f"></i></div>
+            <div class="circle"><i id="instagram" class="fab fa-instagram"></i></div>
+            <div class="circle"><i id="tiktok" class="fab fa-tiktok"></i></div>
+            <div class="circle"><i id="threads" class="fa-brands fa-threads"></i></div>
             
           </div>
         </div>
@@ -108,7 +107,7 @@
     <div class="who-container">
       <div class="who-content">
         <h2 class="who-title">MÌNH <br><span style="font-size: 10rem; padding-left: 10rem; color: #516b24">LÀ AI?</span></h2>
-        <button class="who-button">TÌM HIỂU</button>
+        <a href="who.html" style='text-decoration: none; color: black;' class="who-button">TÌM HIỂU</a>
       </div>
       <div class="who-image-wrapper">
         <img src="/image/whoimg.png" alt="Who Image" class="who-image" />
@@ -119,7 +118,7 @@
   
   
   <section class="combine1" style="background-color: #FDFEEA;">
-    <div class="sign-section">
+    <div id="form" class="sign-section">
       <div class="sign-container">
         <div class="sign-text">
           <h2 class="sign-title">KHÓA HỌC<br><span>HAY</span></h2>
@@ -178,37 +177,38 @@
   </div>
 </section>
   
-  <section class="form-section">
-    <div class="form-bg2"></div>
-  
-    <div class="form-content">
-      <div class="form-box">
-        <h2 class="form-title">CHÚT QUÀ</h2>
-        <h3 class="form-subtitle">ĐẾN HỘP THƯ BẠN</h3>
-        <p class="form-text">
-          Đăng ký ngay để nhận tất cả những điều tuyệt vời, như ưu đãi cho lộ kịp bắt trend thịnh hành, ưu đãi khoá học và những phần thưởng nhỏ qua email.
-        </p>
-        <form class="form-input-group">
-          <input type="email" placeholder="NHẬP EMAIL CỦA BẠN" class="form-input" />
-          <button type="submit" class="form-button">ĐĂNG KÍ NGAY</button>
-        </form>
-      </div>
-  
-      <img src="image/griyo.png" alt="Main visual" class="form-main-image" />
-  
-      <div class="form-image-stack">
-        <img src="image/chut.png" alt="" />
-        <img src="image/chut.png" alt="" />
-        <img src="image/chut.png" alt="" />
-        <img src="image/chut.png" alt="" />
-        <img src="image/chut.png" alt="" />
-        <img src="image/chut.png" alt="" />
-        <img src="image/chut.png" alt="" />
+<section class="form-section">
+  <div class="form-bg2"></div>
 
-        <!-- Add more as needed -->
-      </div>
+  <div class="form-content">
+    <div class="form-box">
+      <h2 class="form-title">CHÚT QUÀ</h2>
+      <h3 class="form-subtitle">ĐẾN HỘP THƯ BẠN</h3>
+      <p class="form-text">
+        Đăng ký ngay để nhận tất cả những điều tuyệt vời, như ưu đãi cho lộ kịp bắt trend thịnh hành, ưu đãi khoá học và những phần thưởng nhỏ qua email.
+      </p>
+      <form class="form-input-group">
+        <input type="email" placeholder="NHẬP EMAIL CỦA BẠN" class="form-input" />
+        <button type="submit" class="form-button">ĐĂNG KÍ NGAY</button>
+      </form>
     </div>
-  </section>
+
+    <img src="image/photo/IMG_0514.webp" alt="Main visual" class="form-main-image" />
+
+    <div class="form-image-stack">
+      <img src="image/photo/IMG_0217.webp" alt="" />
+      <img src="image/photo/IMG_0224.webp" alt="" />
+      <img src="image/photo/IMG_0222.webp" alt="" />
+      <img src="image/photo/IMG_0223.webp" alt="" />
+      <img src="image/photo/IMG_0224.webp" alt="" />
+      <img src="image/photo/IMG_0225.webp" alt="" />
+      <img src="image/photo/IMG_0226.webp" alt="" />
+
+      <!-- Add more as needed -->
+    </div>
+  </div>
+</section>
+
 
   <section class="ft-wrapper">
     <div class="ft-inner">
@@ -232,7 +232,7 @@
   <h3>TƯ VẤN & LIÊN HỆ</h3>
 
   <div class="ft-social-line">
-    <a href="https://instagram.com" target="_blank" class="circle-icon" aria-label="Instagram">
+    <a href="https://www.instagram.com/chuthoc.1711/" target="_blank" class="circle-icon" aria-label="Instagram">
       <!-- Instagram Icon -->
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" viewBox="0 0 24 24">
         <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10zM12 7c-2.8 0-5 2.2-5 5s2.2 5 5 5 5-2.2 5-5-2.2-5-5-5zm0 2c1.7 0 3 1.3 3 3s-1.3 3-3 3-3-1.3-3-3 1.3-3 3-3zm4.5-2a1.5 1.5 0 110 3 1.5 1.5 0 010-3z"/>
@@ -244,38 +244,33 @@
   <p><strong>CHÚT</strong></p>
   <div class="ft-social-group">
     <!-- Facebook -->
-    <a href="https://facebook.com" target="_blank" class="circle-icon" aria-label="Facebook">
+    <a href="https://www.facebook.com/profile.php?id=61551202415096" target="_blank" class="circle-icon" aria-label="Facebook">
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" viewBox="0 0 24 24">
         <path d="M22 12.1C22 6.6 17.5 2 12 2S2 6.6 2 12.1C2 17 5.6 21.1 10.3 22v-7h-3v-3h3v-2.3c0-3 1.8-4.6 4.5-4.6 1.3 0 2.6.2 2.6.2v3h-1.5c-1.5 0-2 1-2 2v1.8h3.4l-.5 3h-2.9v7C18.4 21.1 22 17 22 12.1z"/>
       </svg>
     </a>
        <!-- Instagram -->
-       <a href="https://instagram.com" target="_blank" class="circle-icon" aria-label="Instagram">
+       <a href="https://www.instagram.com/chuthoc.1711/" target="_blank" class="circle-icon" aria-label="Instagram">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" viewBox="0 0 24 24">
           <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10zM12 7c-2.8 0-5 2.2-5 5s2.2 5 5 5 5-2.2 5-5-2.2-5-5-5zm0 2c1.7 0 3 1.3 3 3s-1.3 3-3 3-3-1.3-3-3 1.3-3 3-3zm4.5-2a1.5 1.5 0 110 3 1.5 1.5 0 010-3z"/>
         </svg>
       </a>
   
       <!-- TikTok -->
-      <a href="https://tiktok.com" target="_blank" class="circle-icon" aria-label="TikTok">
+      <a href="https://www.tiktok.com/@chut.hoc.mar" target="_blank" class="circle-icon" aria-label="TikTok">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" viewBox="0 0 24 24">
           <path d="M12.75 2h3.5a4.75 4.75 0 004.75 4.75v3.5a8.25 8.25 0 01-8.25-8.25h-2v13.25a2.75 2.75 0 11-2.75-2.75 2.77 2.77 0 011.25.3V9.82a6.25 6.25 0 100 12.43 6.27 6.27 0 006.25-6.25V7.75a8.25 8.25 0 01-2.75-.75V2z"/>
         </svg>
       </a>
   
-      <!-- Email -->
-      <a href="mailto:chuthoc.mar@gmail.com" class="circle-icon" aria-label="Email">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" viewBox="0 0 24 24">
-          <path d="M2 4h20v16H2V4zm2 2v.511l8 6.004 8-6.004V6H4zm16 2.822l-6.398 4.798a2 2 0 01-2.204 0L4 8.822V18h16V8.822z"/>
-        </svg>
-      </a>
+
     </div>
 
   <p><strong>ACHUTS.SOCIAL:</strong></p>
   <div class="ft-social-group">
     <!-- Same icons as above -->
     <!-- Facebook -->
-    <a href="https://facebook.com" target="_blank" class="circle-icon" aria-label="Facebook">
+    <a href="https://www.facebook.com/profile.php?id=61551202415096" target="_blank" class="circle-icon" aria-label="Facebook">
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" viewBox="0 0 24 24">
         <path d="M22 12.1C22 6.6 17.5 2 12 2S2 6.6 2 12.1C2 17 5.6 21.1 10.3 22v-7h-3v-3h3v-2.3c0-3 1.8-4.6 4.5-4.6 1.3 0 2.6.2 2.6.2v3h-1.5c-1.5 0-2 1-2 2v1.8h3.4l-.5 3h-2.9v7C18.4 21.1 22 17 22 12.1z"/>
       </svg>
@@ -289,18 +284,13 @@
     </a>
 
     <!-- TikTok -->
-    <a href="https://tiktok.com" target="_blank" class="circle-icon" aria-label="TikTok">
+    <a href="https://www.tiktok.com/@chut.hoc.mar" target="_blank" class="circle-icon" aria-label="TikTok">
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" viewBox="0 0 24 24">
         <path d="M12.75 2h3.5a4.75 4.75 0 004.75 4.75v3.5a8.25 8.25 0 01-8.25-8.25h-2v13.25a2.75 2.75 0 11-2.75-2.75 2.77 2.77 0 011.25.3V9.82a6.25 6.25 0 100 12.43 6.27 6.27 0 006.25-6.25V7.75a8.25 8.25 0 01-2.75-.75V2z"/>
       </svg>
     </a>
 
-    <!-- Email -->
-    <a href="mailto:chuthoc.mar@gmail.com" class="circle-icon" aria-label="Email">
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" viewBox="0 0 24 24">
-        <path d="M2 4h20v16H2V4zm2 2v.511l8 6.004 8-6.004V6H4zm16 2.822l-6.398 4.798a2 2 0 01-2.204 0L4 8.822V18h16V8.822z"/>
-      </svg>
-    </a>
+
   </div>
 </div>
 
@@ -308,9 +298,8 @@
         <!-- Column 3 -->
         <div class="ft-col">
           <h3>KHOÁ HỌC</h3>
-          <p>#01 The Social Print</p>
-          <p>#02 TikTok Sprint</p>
-          <p>Q&A - Câu hỏi thường gặp</p>
+          <a href="course_list.html"><p>Danh sách khoá học</p></a>
+          <a href="course_list.html"><p>Q&A - Câu hỏi thường gặp</p></a>
         </div>
       </div>
     </div>
@@ -343,9 +332,11 @@
     window.db = getFirestore(app);
   </script>
 
+
+  
 <script src="js/main.js"></script>
 <script type="module" src="js/index-model.js"></script>
-
+<script src="js/socialLink.js"></script>
 
 </body>
 </html>
